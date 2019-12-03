@@ -1,0 +1,15 @@
+executable = getdata.sh
+
+arguments = $(id) $(year)
+
+should_transfer_files = YES
+transfer_input_files = id.txt
+when_to_transfer_output = ON_EXIT
+
+error = getdata.err
+log = getdata.log
+request_cpus = 1
+request_disk = 512MB
+request_memory = 512MB
+
+queue id,year from id.txt

@@ -1,0 +1,10 @@
+Runing Code in following order:
+
+1. Run getdata.sub by CHTC. Each year (1877-2018) will get three files, eg: 2018_tmax.csv, 2018_tmin.csv, 2018_prcp.csv.
+2. Run merge.sh in a folder contains .csv files produced by step 1. Get three files: TMAX.csv, TMIN.csv, PRCP.csv
+3. Process the three files produced by step2 in R in self laptop. Run Code1.R, then Code2.R.
+
+Notes:
+When we run step 1 using CHTC, it is very strange that some years will generate three empty files(tmax/tmin/prcp).
+We run it several times, but the missing years are totally random, and the corresponding .err files are empty and provide no information. 
+So we have to fill in value for these years additionally by ourselves. 
